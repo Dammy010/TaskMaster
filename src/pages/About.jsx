@@ -13,7 +13,6 @@ const About = () => {
         About TaskMaster
       </motion.h1>
 
-      {/* Problem it Solves */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,7 +25,6 @@ const About = () => {
         a focused, intelligent way to manage tasks and boost your personal productivity.
       </motion.p>
 
-      {/* Original Description */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -39,21 +37,14 @@ const About = () => {
         TaskMaster ensures you never miss a beat whether at home, work, or on the go.
       </motion.p>
 
-      {/* CTA Button */}
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.5 }}
       >
-        <Link
-          to="/"
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition"
-        >
-          Go to Dashboard
-        </Link>
+      
       </motion.div>
 
-      {/* Footer */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.05 }}
