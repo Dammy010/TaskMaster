@@ -6,6 +6,10 @@ import LandingPage from "./pages/LandingPage";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import About from './pages/About';
+
+
+
 
 function App() {
   return (
@@ -20,6 +24,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
 

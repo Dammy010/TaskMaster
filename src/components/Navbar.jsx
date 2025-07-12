@@ -61,6 +61,7 @@ const Navbar = () => {
         TaskMaster
       </Link>
 
+      {/* Desktop Nav */}
       <nav className="hidden md:flex items-center space-x-4">
         <button
           onClick={toggleDarkMode}
@@ -68,6 +69,13 @@ const Navbar = () => {
         >
           {darkMode ? <Sun size={20} /> : <Moon size={20} />}
         </button>
+
+        <Link
+          to="/about"
+          className="text-gray-700 dark:text-gray-200 hover:text-blue-600 font-medium transition"
+        >
+          About
+        </Link>
 
         {user ? (
           <div className="relative" ref={dropdownRef}>
@@ -113,6 +121,7 @@ const Navbar = () => {
         )}
       </nav>
 
+      {/* Mobile Nav */}
       <div className="md:hidden flex items-center gap-3">
         <button
           onClick={toggleDarkMode}
@@ -133,6 +142,14 @@ const Navbar = () => {
           ref={mobileMenuRef}
           className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 px-6 py-4 shadow-md md:hidden space-y-3 z-40"
         >
+          <Link
+            to="/about"
+            onClick={toggleMobileMenu}
+            className="block text-gray-700 dark:text-white"
+          >
+            About
+          </Link>
+
           {user ? (
             <>
               <Link
