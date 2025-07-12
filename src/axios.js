@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'task-master-backend-nu.vercel.app',
+  baseURL: 'https://task-master-sooty.vercel.app/',
   withCredentials: true,
 });
 
